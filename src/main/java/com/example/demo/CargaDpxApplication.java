@@ -1,8 +1,6 @@
 package com.example.demo;
 
-import java.io.File;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -13,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.core.env.Environment;
-import org.springframework.stereotype.Controller;
+
 
 import com.vasco.utils.AAL2Wrap;
 import com.vasco.utils.KernelParms;
@@ -24,8 +20,8 @@ import com.vasco.utils.response.RespDPXGetTokenBlobsEx;
 @SpringBootApplication
 
 public class CargaDpxApplication implements CommandLineRunner {
-	//@Autowired
-	//DataSource dataSource;
+	@Autowired
+	DataSource dataSource;
 	@Autowired
 	MultivaConfiguration config;
 	
@@ -40,7 +36,6 @@ public class CargaDpxApplication implements CommandLineRunner {
 			System.out.println(config.getfKey());
 		
 
-			String sInsertDPInstance = "INSERT INTO DPInstance VALUES (?,?,?,?,?,?)";
 			String sInsertDPLicense = "INSERT INTO DPLicense VALUES (?,?,?,?,?,?,?,?,?)";
 			
 			int ITimeWindow=10;
@@ -69,8 +64,6 @@ public class CargaDpxApplication implements CommandLineRunner {
 			
 	        String myMasterBlob = "";
 	        KernelParms kernel  = new KernelParms(parms);
-	        String StaticVector  = null;
-	        String MessageVector = null;
 	        String tokenType= null;         //common for all dpx
 	        String [] authMode = null;      //common for all dpx
 	        String [] dpData = null;        //common for all dpx
@@ -96,15 +89,13 @@ public class CargaDpxApplication implements CommandLineRunner {
 			String staticVector = myVASCOWrapper.AAL2DPXGetStaticVector(kernel);
 			NumOfApps = myVASCOWrapper.getAppliCount();
 
-	        //
-	          //Class.forName(sDriver); 
-	         // Connection con = DriverManager.getConnection(sURL, sUser, sPass);
-		//	Connection con = dataSource.getConnection();
+	
+			Connection con = dataSource.getConnection();
 	        
 	        RespDPXGetTokenBlobsEx NewToken = null;
 	        int item = 0;
 	        int indexarray = 0;
-	  //     try(PreparedStatement stmt = con.prepareStatement(sInsertDPLicense)) {
+	       try(PreparedStatement stmt = con.prepareStatement(sInsertDPLicense)) {
 	        	
 	        	
 	        	 for (int i=0;i<NumDIGIPASS;i++){
@@ -136,17 +127,17 @@ public class CargaDpxApplication implements CommandLineRunner {
 	                    myDB[indexarray][4] = ActivationVector;
 	                    indexarray = indexarray + 1;
 	                   	
-	                   /*    stmt.setString(1, serialAppl[j]);
+	                     stmt.setString(1, serialAppl[j]);
 	                      stmt.setString(2,tokenType);
-	                      stmt.setString(3,NumApps[j]);
+	                      stmt.setString(3,ApplNames[j]);
 	                      stmt.setString(4,authMode[j]);
 	                     stmt.setString(5,dpData[j]);
 	                     stmt.setString(6,ActivationVector);
 	                     stmt.setInt(7,MyDP.getSeqNumThreshold());
 	                     stmt.setString(8,MyDP.getPKBlob());
-	                     stmt.setInt(9,j);*/
+	                     stmt.setInt(9,j);
 	                	
-	                	// stmt.executeUpdate();
+	                 stmt.executeUpdate();
 	                   	
 	                   	  
 	                     
@@ -162,12 +153,14 @@ public class CargaDpxApplication implements CommandLineRunner {
 	                   
 	                 //myVASCOWrapper.AAL2DPXClose();
 	             }
-	        /*	
+	        	
 	       } catch (SQLException e) {
+	    	   
 	        	System.out.println(e.getMessage());
-	        	myVASCOWrapper.AAL2DPXClose();
+	        	e.printStackTrace();
+	        	
 			}
-	       */
+	       
 		}
 
 
