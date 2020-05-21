@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Ivan/Documents/demo-multi.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/CargaDpx/target/demo-multi.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/CargaDpx/Dockerfile"/>
+        <file path="/CargaDpx/HELP.md"/>
+        <file path="/CargaDpx/mvnw"/>
+        <file path="/CargaDpx/.gitignore"/>
+        <javaElement handleIdentifier="=CargaDpx/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/"/>
+        <folder path="/CargaDpx/target"/>
+        <file path="/CargaDpx/.project"/>
+        <file path="/CargaDpx/pom.xml"/>
+        <folder path="/CargaDpx/src"/>
+        <file path="/CargaDpx/.classpath"/>
+        <file path="/CargaDpx/mvnw.cmd"/>
+        <javaElement handleIdentifier="=CargaDpx/src\/main\/resources=/maven.pomderived=/true=/"/>
+        <javaElement handleIdentifier="=CargaDpx/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/"/>
+        <folder path="/CargaDpx/libs"/>
+    </selectedElements>
+</jardesc>

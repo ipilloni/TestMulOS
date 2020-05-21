@@ -1,0 +1,177 @@
+{"properties": [
+  {
+    "name": "management.address",
+    "type": "java.lang.String",
+    "description": "A description for 'management.address'"
+  },
+  {
+    "name": "multiva.properties.file",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.file'"
+  },
+  {
+    "name": "multiva.properties.key",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.key'"
+  },
+  {
+    "name": "multiva.properties.test",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.test'"
+  },
+  {
+    "name": "multiva.properties.util.key",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.key'"
+  },
+  {
+    "name": "multiva.properties.util.test",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.test'"
+  },
+  {
+    "name": "multiva.properties.util.file",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.file'"
+  },
+  {
+    "name": "multiva.properties.util.fkey",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.fkey'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.url'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.username'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.password'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.driverClassName'"
+  },
+  {
+    "name": "multiva.properties.da",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.da'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  },
+  {
+    "name": "multiva.properties.util.datasource.dClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'multiva.properties.util.datasource.dClassName'"
+  }
+]}
